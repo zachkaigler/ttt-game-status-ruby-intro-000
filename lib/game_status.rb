@@ -18,6 +18,7 @@ WIN_COMBINATIONS = [
 def won?(board)
 win_combo = false
   WIN_COMBINATIONS.each do |win_array|
+    binding.pry
     if win_array[0] == "X" && win_array[1] == "X" && win_array[2] == "X" || win_array[0] == "O" && win_array[1] == "O" && win_array[2] == "O"
       win_combo = win_array
     else
