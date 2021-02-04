@@ -5,13 +5,13 @@ end
 
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
-  [0,1,2] #Top Row
-  [3,4,5] #Mid Row
-  [6,7,8] #Bottom Row
-  [0,4,8] #Horiz L>R
-  [2,4,6] #Horiz R>L
-  [0,3,6] #L Column
-  [1,4,7] #Mid Column
+  [0,1,2], #Top Row
+  [3,4,5], #Mid Row
+  [6,7,8], #Bottom Row
+  [0,4,8], #Horiz L>R
+  [2,4,6], #Horiz R>L
+  [0,3,6], #L Column
+  [1,4,7], #Mid Column
   [2,5,8] #R Column
 ]
 
