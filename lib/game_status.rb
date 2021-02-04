@@ -12,7 +12,7 @@ WIN_COMBINATIONS = [
   [2,4,6], #Horiz R>L
   [0,3,6], #L Column
   [1,4,7], #Mid Column
-  [2,5,8] #R Column
+  [2,5,8]  #R Column
 ]
 
 #def won?
