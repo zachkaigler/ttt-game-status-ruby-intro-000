@@ -30,7 +30,7 @@ end
 
 def full?(board)
   board.each do |space|
-    if space = position_taken
+    if space = position_taken?(board, index)
       true
     end
 
