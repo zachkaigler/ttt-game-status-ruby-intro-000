@@ -29,13 +29,15 @@ win_combo
 end
 
 def full?(board)
-  draw = false
+
   board.each do |space|
     if space != " "
+      true
+    else
+      false
     end
-    draw = true
   end
-  draw
+
 end
 
 
