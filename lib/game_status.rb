@@ -50,6 +50,14 @@ def over?(board)
   won?(board) || full?(board) || draw?(board)
 end
 
+def winner(board)
+  if won?(board) && board[win_array[0]] == "X" && board[win_array[1]] == "X" && board[win_array[2]] == "X"
+    "X"
+  else
+    "O"
+  end
+end
+
 
 
 #def full?(board)
