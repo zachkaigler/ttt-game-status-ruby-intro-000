@@ -28,30 +28,30 @@ win_combo = false
 win_combo
 end
 
-def full?(board)
-  board.each do |space|
-    position_taken?(board, index)
-  end
-end
-
-
-
-
 #def full?(board)
-#  full = false
-#  taken = false
-#  counter = 0
 #  board.each do |space|
-#    if space != " "
-#      taken = board[counter]
-#    end
-#    counter += 1
+
 #  end
-#  if board [0] == taken && board [1] == taken && board [2] == taken && board [3] == taken && board [4] == taken && board [5] == taken && board [6] == taken && board [7] == taken && board [8] == taken &&
-#    full = true
-#  end
-#  full
 #end
+
+
+
+
+def full?(board)
+  full = false
+  taken = false
+  counter = 0
+  board.each do |space|
+    if space != " "
+      taken = board[counter]
+    end
+    counter += 1
+  end
+  if board[0] == taken && board[1] == taken && board[2] == taken && board[3] == taken && board[4] == taken && board[5] == taken && board[6] == taken && board[7] == taken && board[8] == taken
+    full = true
+  end
+  full
+end
 
 
 #def won?(board)
