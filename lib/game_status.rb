@@ -28,7 +28,15 @@ win_combo = false
 win_combo
 end
 
+def full?(board)
+  board.each do |space|
+    if space = position_taken
+      true
+    end
 
+
+  end
+end
 
 
 
