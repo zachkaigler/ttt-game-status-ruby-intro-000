@@ -33,11 +33,11 @@ def full?(board)
   counter = 0
   board.each do |space|
     if space != " "
-      board[counter] = taken
+      taken = board[counter]
     end
     counter += 1
   end
-  if board [0] = taken && board [1] = taken && board [2] = taken && board [3] = taken && board [4] = taken && board [5] = taken && board [6] = taken && board [7] = taken && board [8] = taken &&
+  if board [0] == taken && board [1] == taken && board [2] == taken && board [3] == taken && board [4] == taken && board [5] == taken && board [6] == taken && board [7] == taken && board [8] == taken &&
     full = true
   end
   full
