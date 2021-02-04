@@ -28,6 +28,16 @@ win_combo = false
 win_combo
 end
 
+def full?(board)
+  full = false
+  if board[0] != " " && board[1] != " " && board[2] != " " && board[3] != " " && board[4] != " " && board[5] != " " && board[6] != " " && board[7] != " " && board[8] != " "
+    full = true
+  end
+  full
+end
+
+
+
 #def full?(board)
 #  board.each do |space|
 
@@ -35,23 +45,21 @@ end
 #end
 
 
-
-
-def full?(board)
-  full = false
-  taken = false
-  counter = 0
-  board.each do |space|
-    if space != " "
-      taken = board[counter]
-    end
-    counter += 1
-  end
-  if board[0] == taken && board[1] == taken && board[2] == taken && board[3] == taken && board[4] == taken && board[5] == taken && board[6] == taken && board[7] == taken && board[8] == taken
-    full = true
-  end
-  full
-end
+#def full?(board)
+#  full = false
+#  taken = false
+#  counter = 0
+#  board.each do |space|
+#    if space != " "
+#      taken = board[counter]
+#    end
+#    counter += 1
+#  end
+#  if board[0] == taken && board[1] == taken && board[2] == taken && board[3] == taken && board[4] == taken && board[5] == taken && board[6] == taken && board[7] == taken && board[8] == taken
+#    full = true
+#  end
+#  full
+#end
 
 
 #def won?(board)
