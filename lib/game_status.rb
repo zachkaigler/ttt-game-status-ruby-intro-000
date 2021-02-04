@@ -30,6 +30,7 @@ end
 
 def full?(board)
   full = false
+  taken = false
   counter = 0
   board.each do |space|
     if space != " "
