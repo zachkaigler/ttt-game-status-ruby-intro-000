@@ -16,14 +16,14 @@ WIN_COMBINATIONS = [
   [2,5,8]  #R Column
 ]
 
+#board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
 def won?(board)
 win_combo = false
   WIN_COMBINATIONS.each do |win_array|
     binding.pry
-    if win_array[0] == "X" && win_array[1] == "X" && win_array[2] == "X" || win_array[0] == "O" && win_array[1] == "O" && win_array[2] == "O"
+    if board[win_array[0]] == "X" && board[win_array[1]] == "X" && board[win_array[2]] == "X" || board[win_array[0]] == "O" && board[win_array[1]] == "O" && board[win_array[2]] == "O"
       win_combo = win_array
-    else
-      false
     end
   end
 win_combo
