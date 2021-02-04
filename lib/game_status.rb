@@ -29,23 +29,29 @@ win_combo
 end
 
 def full?(board)
-  full = false
-  taken = false
-  counter = 0
   board.each do |space|
-    if space != " "
-      taken = board[counter]
-    end
-    counter += 1
+    position_taken?(board, index)
   end
-  if board [0] == taken && board [1] == taken && board [2] == taken && board [3] == taken && board [4] == taken && board [5] == taken && board [6] == taken && board [7] == taken && board [8] == taken &&
-    full = true
-  end
-  full
 end
 
 
 
+
+#def full?(board)
+#  full = false
+#  taken = false
+#  counter = 0
+#  board.each do |space|
+#    if space != " "
+#      taken = board[counter]
+#    end
+#    counter += 1
+#  end
+#  if board [0] == taken && board [1] == taken && board [2] == taken && board [3] == taken && board [4] == taken && board [5] == taken && board [6] == taken && board [7] == taken && board [8] == taken &&
+#    full = true
+#  end
+#  full
+#end
 
 
 #def won?(board)
@@ -57,14 +63,3 @@ end
 #    false
 #  end
 #end
-
-#WIN_COMBINATIONS = [
-#  top_row_win = [0,1,2], #Top Row
-#  mid_row_win = [3,4,5], #Mid Row
-#  bot_row_win = [6,7,8], #Bottom Row
-#  l_hor_win = [0,4,8], #Horiz L>R
-#  r_hor_win = [2,4,6], #Horiz R>L
-#  l_col_win = [0,3,6], #L Column
-#  mid_col_win = [1,4,7], #Mid Column
-#  r_col_win = [2,5,8]  #R Column
-#]
