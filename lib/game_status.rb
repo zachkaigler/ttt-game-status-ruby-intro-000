@@ -32,7 +32,7 @@ def full?(board)
   draw = false
   board.each do |space|
     if space != " "
-      true
+      draw = true
     end
   end
   draw
