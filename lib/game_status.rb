@@ -57,6 +57,8 @@ def winner(board)
       winner = "X"
     elsif board[win_array[0]] == "O" && board[win_array[1]] == "O" && board[win_array[2]] == "O"
       winner = "O"
+    else
+      winner = nil
     end
   end
   winner
